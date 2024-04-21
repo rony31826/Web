@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot - Consulta a la IA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>IA</h1>
+        </div>
+        <div class="chat-container" id="chat-container">
+            <marquee id="marquee" class="bot-message" behavior="scroll" direction="center" style="background-color: black; margin: 10px; display: ;">
+                <i id="rayo" class="fas fa-bolt"></i>Powered By GMCN_STUDIOS<i id="rayo" class="fas fa-bolt"></i>
+            </marquee>
+
+        </div>
+        <div id="loader" class="loader"></div>
+        <div class="input-container">
+
+            <input type="text" id="prompt" placeholder="Escribe tu mensaje...">
+            <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i> Enviar</button>
+        </div>
+
+    </div>
+    <script src="ytdlpro.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

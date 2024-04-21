@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000116;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 99%;
+    margin: 50px auto;
+    background-color: #000116;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    background-color: #001D58;
+    color: #000116;
+    padding: 20px;
+   margin-top: 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    Padding-right: 0px;
+    padding-bottom: 100px;
+    overflow-y: auto;
+    max-height: auto;
+
+}
+
+.user-message {
+    background-color: #403E4E;
+    color: white;
+    align-self: flex-start; /* Alinea el mensaje del usuario a la izquierda */
+    margin-right: 20%; /* Ajusta el margen derecho para que el mensaje se vea más a la izquierda */
+    margin-left: 0;
+    /* Restablece el margen izquierdo para evitar conflictos */
+    margin-top: 10px;
+}
+
+.bot-message {
+    background-color: #3F4166;
+    color: #fff;
+    align-self: flex-end; /* Alinea el mensaje del bot a la derecha */
+    margin-left: 20%; /* Ajusta el margen izquierdo para que el mensaje se vea más a la derecha */
+    margin-right: 0; /* Restablece el margen derecho para evitar conflictos */
+}
+
+.download-button {
+    margin-bottom: 10px;
+     background-color: #3F4166;
+    color: #fff;
+    align-self: flex-end; /* Alinea el mensaje del bot a la derecha *//* Ajusta el margen izquierdo para que el mensaje se vea más a la derecha */
+    margin-right: 0; /* Restablece el margen derecho para evitar conflictos*/
+}
+/*
+.input-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #001D58;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+*/
+.input-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 89%;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background-color: #001D58;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #35356B;
+    color: white;
+}
+Input:hover {
+    border: solid 1px black;
+    background-color: #35356B;
+}
+
+button {
+    background-color: #35356B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #35356B;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.loader {
+    border: 5px solid gray;
+    border-top: 5px solid #352742;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+    margin: 0 40px 30px auto;
+    display: none;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes brillo {
+    0% {
+        color: #ff0000;
+        text-shadow: 0 0 5px #ff0000;
+    }
+    25% {
+        color: #00ff00;
+        text-shadow: 0 0 5px #00ff00;
+    }
+    50% {
+        color: #0000ff;
+        text-shadow: 0 0 5px #0000ff;
+    }
+    75% {
+        color: #ffff00;
+        text-shadow: 0 0 5px #ffff00;
+    }
+    100% {
+        color: #ff00ff;
+        text-shadow: 0 0 5px #ff00ff;
+    }
+}
+
+#marquee {
+    animation: brillo 0.3s infinite;
+}
+
+video {
+    border-radius: 10px;
+}
+
+#rayo {
+    animation: rayo 0.1s infinite;
+}
+
+    @keyframes rayo {
+        0% {
+            color: #ff0000;
+            text-shadow: 0 0 5px #ff0000;
+        }
+        20% {
+            color: #ff8000;
+            text-shadow: 0 0 5px #ff8000;
+        }
+        40% {
+            color: #ffff00;
+            text-shadow: 0 0 5px #ffff00;
+        }
+        60% {
+            color: #00ff00;
+            text-shadow: 0 0 5px #00ff00;
+        }
+        80% {
+            color: #0000ff;
+            text-shadow: 0 0 5px #0000ff;
+        }
+        100% {
+            color: #ff00ff;
+            text-shadow: 0 0 5px #ff00ff;
+        }
+    }
